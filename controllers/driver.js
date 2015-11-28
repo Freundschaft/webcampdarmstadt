@@ -22,6 +22,13 @@ module.exports = {
       res.send(driver);
     });
   },
+  change: function (req, res) {
+    Driver.findOneAndUpdate({_id: req.params.id}, {routes: req.body.routes}, function (err, driver) {
+      if (err) return console.error(err);
+      console.log(driver);
+      res.send(driver);
+    });
+  },
   getAll: function (req, res) {
     Driver.find(function (err, drivers) {
       if (err) return console.error(err);
