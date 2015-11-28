@@ -105,15 +105,8 @@ app.controller('driversCtrl', function ($rootScope, $scope, Drivers, $http) {
   $scope.addNewDriver = function () {
     Drivers.createNew({firstName: $scope.newDriver.firstName, lastName: $scope.newDriver.lastName})
       .then(function (driver) {
-        Drivers.getAll()
-          .then(function (drivers) {
-            $scope.drivers = drivers;
-          });
+        $rootScope.$broadcast('refreshDrivers');
       })
-  };
-
-  $scope.deleteDriver = function (driver) {
-    alert(driver);
   };
 });
 app.controller('upperCaseCtrl', function ($scope, Drivers) {
