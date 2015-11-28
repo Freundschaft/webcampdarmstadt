@@ -7,10 +7,11 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/webcampdarmstadt');
 var routes = require('./routes.js')(app);
 var db = mongoose.connection;
+var port = process.env.port || 3000;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function (callback) {
   console.log('MongoDB Open...');
-  var server = app.listen(3000, function () {
+  var server = app.listen(port, function () {
     var host = server.address().address;
     var port = server.address().port;
 
