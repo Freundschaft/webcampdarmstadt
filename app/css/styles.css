@@ -1,0 +1,17 @@
+#demoinput {
+    background-color: red
+}
+#demolowerinput{
+    background-color: blue
+}
+.output {
+    color: green;
+}
+
+.outputcalculation {
+    color: green;
+}
+
+body {
+    font-size: 12px;
+}

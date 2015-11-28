@@ -1,0 +1,12 @@
+<h1>All the drivers</h1>
+<div ng-repeat="driver in drivers">
+    <taxi-driver info="driver"></taxi-driver>
+</div>
+<br/>
+<p>
+    First Name: <input type="text" ng-model="newDriver.firstName">
+    <br/>
+    Last Name: <input type="text" ng-model="newDriver.lastName">
+    <br/>
+    <button ng-click="addNewDriver()">Add New Driver</button>
+</p>

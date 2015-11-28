@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8"><p>Click the button to convert the string to lowercase letters.</p>
+            <input ng-model="result" id="demolowerinput" type="text" name="firstname" ng-change="convertToLowerCase()">
+            <button ng-click="convertToLowerCase()">Try it</button>
+        </div>
+    </div>
+</div>
+<p class="output" id="demooutput1">{{lowerCaseResult}}</p>
+
+<p class="output" id="demooutput2">original value: {{result}}</p>

@@ -1,0 +1,24 @@
+{
+  "name": "webcampdarmstadt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Freundschaft/webcampdarmstadt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Freundschaft/webcampdarmstadt/issues"
+  },
+  "homepage": "https://github.com/Freundschaft/webcampdarmstadt#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.8"
+  }
+}

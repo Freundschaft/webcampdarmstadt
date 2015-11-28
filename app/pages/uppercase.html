@@ -1,0 +1,12 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8"><p>Click the button to convert the string to uppercase letters.</p>
+            <input ng-model="result" id="demoinput" type="text" name="firstname" ng-change="convertToUpperCase()">
+            <button ng-click="convertToUpperCase()">Try it</button>
+        </div>
+    </div>
+</div>
+{{drivers}}
+<p ng-show="upperCaseResult" class="output" id="demooutput1">{{upperCaseResult}}</p>
+
+<p ng-show="result" class="output" id="demooutput2">original value: {{result}}</p>
